@@ -3,7 +3,6 @@ import express from "express";
 import trainRoutes from "./routes/train.js";
 import dotenv from "dotenv";
 import cors from "cors";
-import { createServer } from "@vercel/node";
 
 
 
@@ -21,4 +20,4 @@ export function startServer(port = 3000) {
   });
 }
 startServer(3000);
-export default createServer(app);
+export default app;
